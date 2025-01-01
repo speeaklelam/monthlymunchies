@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monthly Munchies</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+</html>
+
+<body>
+    <header>
+        <h1>2025 January Monthly Munchies</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="2025.html">2025</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left-section">
+            <h2>Details</h2>
+            <ul>
+                <li>Area: Kensington Market</li>
+                <li>Destinations: 3</li>
+                <li>Cuisines: Japanese, American, Italian</li>
+            </ul>
+        </div>
+
+        <div class="middle-section">
+            <h2>Map</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.359194981075!2d-79.40287514999999!3d43.65483405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34c23d02c2eb%3A0x472d5132915be00c!2sKensington%20Market%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1731195952295!5m2!1sen!2sca"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="right-section">
+            <h2>Clues</h2>
+            <ul>
+                <li>Breakfast</li><p>Small Small Rocks</p>
+                <li>Lunch</li><p>How I describe your physical appearance + Very yummy + The best hockey city in the world!</p>
+                <li>Dinner and Dessert</li><p>Sceptres inaugural chant + Male private part + Word you can't spell</p>
+            </ul>
+        </div>
+    </div>
+
+    <div class="give-up-button">
+        <button onclick="showAnswers()">Give up?</button>
+    </div>
+
+    <div class="popup" id="answerPopup">
+        <div class="popup-content">
+            <h2>Answers</h2>
+            <div id="answersList">
+                <div class="answer-item">
+                    <p>Destination #1 <button onclick="toggleAnswer(this)">Show Answer</button></p>
+                    <div class="answer" style="display: none;">LITTLE PEBBLES CAFE</div>
+                </div>
+                <div class="answer-item">
+                    <p>Destination #2 <button onclick="toggleAnswer(this)">Show Answer</button></p>
+                    <div class="answer" style="display: none;">Ugly Delicious Toronto</div>
+                </div>
+                <div class="answer-item">
+                    <p>Destination #3 <button onclick="toggleAnswer(this)">Show Answer</button></p>
+                    <div class="answer" style="display: none;">T.O. Dickens Restaurant</div>
+                </div>
+            </div>
+            <button class="close-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(button) {
+            const answerDiv = button.parentNode.nextElementSibling;
+
+            if (answerDiv.style.display === "none") {
+                answerDiv.style.display = "block";
+                button.textContent = "Hide Answer";
+            } else {
+                answerDiv.style.display = "none";
+                button.textContent = "Show Answer";
+            }
+        }
+
+        function showAnswers() {
+            const popup = document.getElementById('answerPopup');
+            popup.style.display = 'block';
+        }
+
+        function closePopup() {
+            const popup = document.getElementById('answerPopup');
+            popup.style.display = 'none';
+        }
+    </script> 
+
+    <header>
+        <h2>Things To Do</h2>
+    </header>
+
+    <div class="container">
+        <div class="activity-section">
+            <h3>Secondhand Stylist</h3>
+            <ul>
+                <li>Go thrifting and pick out a new outfit for the other person.</li>
+            </ul>
+
+        </div>
+
+        <div class="activity-section">
+            <h3>Urban Snapshots</h3>
+            <ul>
+                <li>Have a photoshoot with the street art.</li>
+            </ul>
+        </div>
+
+        <div class="activity-section">
+            <h3>Leafy Leisure</h3>
+            <ul>
+                <li>Take a stroll around Bellevue Square Park.</li>
+            </ul>
+        </div>
+
+        <div class="activity-section">
+            <h3>Gallery Gallivant</h3>
+            <ul>
+                <li>Art gallery hopping in Kensington Market.</li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
