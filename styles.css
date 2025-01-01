@@ -1,12 +1,12 @@
 /* Add Fonts */
 @font-face {
     font-family: "Shrikhand";
-    src: url('fonts/Shrikhand-Regular.ttf') format('truetype');
+    src: url('Shrikhand-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Rubik";
-    src: url('fonts/Rubik-VariableFont_wght.ttf') format('truetype');
+    src: url('Rubik-VariableFont_wght.ttf') format('truetype');
 }
 
 /* Headers */
