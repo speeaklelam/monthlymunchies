@@ -175,6 +175,7 @@ nav li a {
 
 .activity-section {
     width: 70%;  /* Full width for activity section */
+    padding: 20px;
     background-color: #a8dadc;
     border-radius: 5px;
     margin-bottom: 30px;
